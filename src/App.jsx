@@ -1,20 +1,13 @@
-// app.jsx
-import React, { useState } from "react";
+import React from "react";
 import MovieForm from "./components/MovieForm";
-import MovieList from "./components/MovieList";
 
-const App = () => {
-  const [movies, setMovies] = useState([]);
-
-  const addMovie = (movieTitle) => {};
-
+function App() {
   return (
     <div>
-      <h1>Movie Review Site</h1>
-      <MovieForm onAddMovie={addMovie} />
-      <MovieList movies={movies} />
+      <h1>Movie Search</h1>
+      <MovieForm />
     </div>
   );
-};
+}
 
 export default App;
